@@ -160,7 +160,7 @@ jobs:
             image_options: -u 1001 --gpus all --cap-add SYS_ADMIN
             target_devices: cuda:gpu
           - name: NVIDIA/CUDA 13.1
-            runner: '["Linux", "cuda13"]'
+            runner: '["test-cuda"]'
             image: "ghcr.io/intel/llvm/ubuntu2404_intel_drivers_cuda131:latest"
             image_options: -u 1001 --gpus all --cap-add SYS_ADMIN
             target_devices: cuda:gpu
@@ -253,7 +253,7 @@ jobs:
             image_options: -u 1001 --gpus all --cap-add SYS_ADMIN
             target_devices: cuda:gpu
           - name: NVIDIA/CUDA 13.1
-            runner: '["Linux", "cuda13"]'
+            runner: '["test-cuda"]'
             image: "ghcr.io/intel/llvm/ubuntu2404_intel_drivers_cuda131:latest"
             image_options: -u 1001 --gpus all --cap-add SYS_ADMIN
             target_devices: cuda:gpu
